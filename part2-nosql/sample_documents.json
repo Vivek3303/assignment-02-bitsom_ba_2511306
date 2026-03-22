@@ -1,0 +1,42 @@
+[
+  {
+    "product_id": "ELEC-101",
+    "category": "Electronics",
+    "name": "Noise-Canceling Wireless Headphones",
+    "price": 24999,
+    "specs": {
+      "voltage_v": 5,
+      "warranty_years": 2,
+      "battery_life_hours": 30
+    },
+    "features": ["bluetooth", "active noise cancellation", "built-in microphone"]
+  },
+  {
+    "product_id": "CLOT-202",
+    "category": "Clothing",
+    "name": "Men's Classic Cotton T-Shirt",
+    "price": 899,
+    "attributes": {
+      "sizes_available": ["S", "M", "L", "XL"],
+      "material": "100% Cotton",
+      "color": "Navy Blue"
+    },
+    "care_instructions": {
+      "wash": "Machine wash cold",
+      "iron": "Low heat, inside out"
+    }
+  },
+  {
+    "product_id": "GROC-303",
+    "category": "Groceries",
+    "name": "Organic Almond Milk 1L",
+    "price": 350,
+    "expiry_date": "2024-12-15",
+    "nutrition_info": {
+      "calories_per_100ml": 15,
+      "protein_g": 0.5,
+      "is_vegan": true,
+      "allergens": ["Tree Nuts"]
+    }
+  }
+]
