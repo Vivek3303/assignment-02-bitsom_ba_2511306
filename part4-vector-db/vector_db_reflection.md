@@ -1,1 +1,7 @@
+## Vector DB Use Case
 
+For a law firm wanting to search 500-page contracts using plain English queries like "What are the termination clauses?", a traditional keyword-based database search would **not** suffice. 
+
+Traditional databases (like SQL or standard NoSQL document stores) rely on lexical search—they look for exact word matches or simple variations. If a lawyer searches for "termination", a keyword search might miss a crucial clause that uses the phrase "end of agreement", "cancellation of services", or "severance of contract," even though the underlying meaning is exactly what the lawyer is looking for. Furthermore, keyword searches struggle with context and intent, often returning hundreds of irrelevant results just because a word happens to randomly appear on the page.
+
+A **vector database** solves this by capturing semantic meaning. It works in tandem with an embedding model (like an LLM) that converts chunks of the contract into dense numerical vectors. These vectors represent the *meaning* and context of the text. When a lawyer asks a question, the query is also converted into a vector. The vector database then performs a "nearest neighbor" or cosine similarity search, rapidly retrieving the contract clauses that are conceptually closest to the query in the vector space, regardless of the exact vocabulary used. This allows for highly accurate, context-aware, and natural language searching, which is mandatory for parsing dense legal documents efficiently.
